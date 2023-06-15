@@ -1,0 +1,57 @@
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  .aboutImage > .image {
+    width: 20vw;
+    border-radius: 4rem;
+    transition: 0.5s ease-in-out;
+    margin: 2rem;
+  }
+  .aboutImage > .image:hover {
+    cursor: pointer;
+    box-shadow: 0 0 1rem rgba(255, 0, 0, 0.342);
+  
+    transform: scale(1.02);
+  }
+  .heading {
+    text-align: center;
+    font-size: 4.5rem;
+    line-height: 1.2;
+    color: rgb(255, 255, 255);
+  }
+  .span {
+    color: red;
+  }
+  
+  .aboutContent h2 {
+    text-align: left;
+    line-height: 1.2;
+  
+  }
+  .aboutContent h3 {
+    font-size: 2.6rem;
+    
+  }
+  .aboutContent p {
+    font-size: 1.8rem;
+    margin: 2rem 0 3rem;
+  }
+  .button{
+    text-align: center;
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    border-radius: 5rem;
+    box-shadow: 0 0 1rem rgba(255, 0, 0, 0.342);
+    font-size: 1.6rem;
+    color: rgb(255, 255, 255);
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    transition: ease;
+  }
+  .button:hover {
+    cursor: pointer;
+    box-shadow: none;
+  }
