@@ -46,7 +46,13 @@ export default function HomeSection() {
         </div>
 
         <div className={styles.homeProfile}>
-          <Image className="image" width={22} height={22} src={"/"} alt={""} />
+          <Image
+            className={styles.image}
+            width={22}
+            height={22}
+            src={"/"}
+            alt={""}
+          />
         </div>
       </section>
     </>

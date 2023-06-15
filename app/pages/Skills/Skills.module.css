@@ -1,0 +1,60 @@
+.skills  {
+  display: flex;
+  text-align: center;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin: 2rem;
+
+}
+.heading {
+  text-align: center;
+  font-size: 4.5rem;
+ 
+}
+.span {
+  color: red;
+}
+.skillsContainer {
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin: 1rem;
+}
+.skillsContainer > .skillBox {
+  flex: 1 1 10rem;
+  border: 0.2rem solid rgba(255, 0, 0, 0.342);
+  padding: 1rem 1rem 1rem;
+  border-radius: 2rem;
+  font-size: 2rem;
+  transition: 0.5s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.skillBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skillBox:hover {
+  color: red;
+  box-shadow: 0 0 1rem rgba(255, 0, 0, 0.342);
+  cursor: pointer;
+  transform: scale(1.02);
+  border-color: red;
+}
+.skillIcon {
+  font-size: 2.5rem;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+
+}

@@ -1,0 +1,45 @@
+.contato .heading {
+    margin-bottom: 3rem;
+    text-align: center;
+    font-size: 4.5rem;
+  }
+  .contato form {
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  .contato form .inputBox {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .contato form .inputBox input,
+  .contato form textarea {
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: white;
+    background-color: rgba(37, 37, 37, 0.342);
+    border-radius: 0.8rem;
+    margin: 0.7rem 0;
+  }
+  .contato form .inputBox input {
+    width: 49%;
+  }
+.buttonInput {
+    padding: 2rem;
+    background-color: white;
+    font-size: 1.6rem;
+    color: black;
+    width: 50%;
+    border-radius: 4rem;
+  }
+  .contato form textarea {
+    resize: none;
+  }
+  
+  .contato form .buttonInput {
+    margin-top: 2rem;
+    cursor: pointer;
+  }

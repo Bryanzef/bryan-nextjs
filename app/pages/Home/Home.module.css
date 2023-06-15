@@ -15,16 +15,16 @@
     transform: scale(1.02);
   }
   
-  .homeContent h3 {
+  .homeContent .h3 {
     font-size: 3rem;
     font-weight: 700;
   }
-  .homeContent h3:nth-of-type(2) {
+  .homeContent .h3:nth-of-type(2) {
     margin-bottom: 2rem;
   }
   
 
-  .homeContent h1 {
+  .homeContent .h1 {
     font-size: 5.4rem;
     font-weight: 700;
     line-height: 1.3;
@@ -42,7 +42,7 @@
     border-radius: 10px;
     margin: 0.2rem;
     font-size: 2.5rem;
-    color: rgb(255, 234, 234);
+    color: rgb(237, 234, 255);
     margin: 3rem 1.5rem 3rem 0;
     transition: 0.5s ease;
   }

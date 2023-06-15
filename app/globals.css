@@ -20,30 +20,143 @@ html {
   overflow-y: scroll;
 }
 body {
-  background-color: black;
+  background-color: rgb(7, 0, 0);
 }
 section {
   min-height: 70vw;
   padding: 8rem 9% 2rem;
 }
-@layer base {
-  body {
-    @apply bg-zinc-950 text-zinc-100
-    
-  }
-}
 
 
-*::-webkit-scrollbar {
-  width: 8px;
-}
 
-*::-webkit-scrollbar-track {
-  background: #374151;
-  border-radius: 5px;
-}
 @media (max-width: 1200px) {
   html {
     font-size: 50%;
+  }
+}
+/* TELAS MENOR QUE 990 */
+@media (max-width: 990px) {
+  .header {
+    padding: 2rem 3%;
+  }
+  section {
+    padding: 10rem 3% 2rem;
+  }
+  .skills {
+    padding-bottom: 7rem;
+  }
+  .projetos {
+    padding-bottom: 7rem;
+  }
+  .contato {
+    min-height: auto;
+  }
+  .footer {
+    padding: 2rem 3%;
+  }
+}
+/* TELAS MENOR QUE 768 */
+@media (max-width: 768px) {
+  .menuIcon {
+    display: block;
+    color: white;
+  }
+  .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1rem 3%;
+    background-color: rgba(0, 0, 0, 0.836);
+    border-top: 0.2rem solid rgba(255, 0, 0, 0.486);
+    box-shadow: 0 0 1rem rgba(255, 0, 0, 0.342);
+    display: none;
+  }
+  .navbar.active {
+    display: block;
+  }
+  .navbar a {
+    display: block;
+    font-size: 2rem;
+    margin: 3rem 0;
+  }
+  .home {
+    flex-direction: column;
+  }
+  .homeContent h3 {
+    font-size: 2.6rem;
+  }
+  .homeContent h1 {
+    font-size: 5rem;
+  }
+  .homeProfile .image {
+    width: 300px;
+    height: 300px;
+    margin-top: 4rem;
+  }
+  .about {
+    flex-direction: column-reverse;
+  }
+  .about .image {
+    width: 70vw;
+    margin-top: 4rem;
+  }
+  .skills h2 {
+    margin-bottom: 3rem;
+  }
+  .projetos h2 {
+    margin-bottom: 3rem;
+  }
+  .portifolioContainer > .portifolioBox {
+    width: auto;
+  }
+  .portifolioContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .portifolioBox .image {
+    height: 300px;
+  }
+}
+
+/* TELAS MENORES QUE 617*/
+@media (max-width: 617px) {
+  .portifolioContainer {
+    grid-template-columns: 1fr;
+  }
+  .portifolioContainer > .portifolioBox {
+    width: 100%;
+  }
+  .portifolioBox > .image {
+    width: 100%;
+  }
+}
+
+/* TELAS MENORES QUE 450*/
+@media (max-width: 617px) {
+  html {
+    font-size: 50%;
+  }
+ 
+  .contato form .inputBox input {
+    width: 100%;
+  }
+}
+/* TELAS MENORES QUE 360*/
+@media (max-width: 360px) {
+  .homeProfile > .image {
+    margin-top: 1rem;
+    width: 200px;
+    height: 200px;
+  }
+
+  .about-img > .image {
+    width: 90vw;
+  }
+  .footer {
+    flex-direction: column-reverse;
+  }
+  .footer p {
+    text-align: center;
+    margin-top: 2rem;
   }
 }

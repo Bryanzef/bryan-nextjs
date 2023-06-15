@@ -1,0 +1,119 @@
+.projetos h2 {
+   
+    margin-bottom: 4rem;
+    text-align: center;
+    font-size: 4.5rem;
+   
+  }
+  .portifolioContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+  }
+  .portifolioContainer .portifolioBox{
+    position: relative;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem rgba(255, 0, 0, 0.342);
+    overflow: hidden;
+    display: flex;
+    transition: ease;
+  }
+  .portifolioBox:hover {
+    color: red;
+    box-shadow: 0 0 1rem rgba(3, 0, 0, 0.342);
+    cursor: pointer;
+  }
+  .portifolioBox > .image {
+    width: 500px;
+    height: 300px;
+    transition: 0.5s ease;
+  }
+  .portifolioBox:hover .image {
+    transform: scale(1.1);
+  }
+  .portifolioBox .projetosLayer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.527);
+    text-align: center;
+    padding: 0 2rem;
+    transform: translateY(100%);
+    transition: 0.5s ease-in-out;
+  }
+  .portifolioBox:hover .projetosLayer {
+    transform: translate(0);
+  }
+  .projetosLayer > h4 {
+    color: white;
+  }
+  .projetosLayer > p {
+    background-color: rgba(0, 0, 0, 0.384);
+  }
+  .styleP{
+    color: rgb(255, 255, 255);
+    font-weight: 600
+    ;
+  }
+  
+  .projetosLayer h4 {
+    font-size: 2rem;
+  }
+  .projetosLayer p {
+    font-size: 1.4rem;
+    margin: 0.1rem 0 0.8rem;
+  }
+  .projetosLayer > .font-size-min {
+    font-size: 1.4rem;
+  }
+  .projetosLayer a {
+    display: inline-flex;
+    justify-content: center;
+    width: 5.5rem;
+    height: 5.5rem;
+    background-color: white;
+    border-radius: 50%;
+    text-align: center;
+    align-items: center;
+  }
+  .projetosLayer a .icon {
+    font-size: 2rem;
+    text-align: center;
+    align-items: center;
+    color: black;
+  }
+  .projetosLayer > a > .icon:hover {
+    color: rgb(255, 0, 0);
+  }
+  @media (max-width: 990px) {
+    .projetos h2 {
+      margin-bottom: 3rem;
+    }
+    .portifolioContainer > .portifolioBox {
+      width: auto;
+    }
+    .portifolioContainer {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .portifolioBox .image {
+      height: 300px;
+    }
+    }
+    @media (max-width: 617px) {
+      .portifolioContainer {
+        grid-template-columns: 1fr;
+      }
+      .portifolioContainer > .portifolioBox {
+        width: 100%;
+      }
+      .portifolioBox > .image {
+        width: 100%;
+      }
+    }

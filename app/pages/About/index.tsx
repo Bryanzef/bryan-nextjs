@@ -29,7 +29,13 @@ export default function AboutSection() {
             impulsionar projetos para alcançar resultados notáveis
           </p>
           <div className={styles.aboutImage}>
-            <Image width={22} height={33} src={"/"} alt={"/"} />
+            <Image
+              width={22}
+              height={33}
+              src={"/"}
+              alt={"/"}
+              className={styles.image}
+            />
           </div>
           <a href="/" className={styles.button}>
             Desubra Mais
